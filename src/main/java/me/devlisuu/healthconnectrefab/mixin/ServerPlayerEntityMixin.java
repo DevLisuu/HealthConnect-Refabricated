@@ -1,7 +1,7 @@
 package me.devlisuu.healthconnectrefab.mixin;
 
 import me.devlisuu.healthconnectrefab.HealthConnect;
-import me.devlisuu.healthconnectrefab.util.HealthConnectVarInteface;
+import me.devlisuu.healthconnectrefab.util.HealthConnectVarInterface;
 import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.server.network.ServerPlayerEntity;
 import org.spongepowered.asm.mixin.Mixin;
@@ -10,7 +10,7 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(ServerPlayerEntity.class)
-public class ServerPlayerEntityMixin implements HealthConnectVarInteface {
+public class ServerPlayerEntityMixin implements HealthConnectVarInterface {
     boolean HealthConnectVar = false;
 
     @Override
