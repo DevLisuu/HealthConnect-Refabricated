@@ -19,7 +19,7 @@ public class HealthConnect implements ModInitializer {
         modEnabled = bool;
     }
 
-    public static boolean getModEnabled() {
+    public static boolean isModEnabled() {
         return modEnabled;
     }
 
